@@ -14,7 +14,7 @@ public class ClassWork {
         driver.manage().window().maximize();//sayfayi actiktan sonra hep maximiza yap
         driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(15));//Bu method sayfadaki her bir webelement icin
                                                                           //max. bekleme suresini belirler.
-        // bu islemi yapmayi aliskanlik haline getir.
+                                                                          // bu islemi yapmayi aliskanlik haline getir.
 
         //ChromeDriver kullanarak, facebook sayfasina gidin ve sayfa basliginin (title) “facebook”
         //oldugunu dogrulayin (verify), degilse dogru basligi yazdirin.
