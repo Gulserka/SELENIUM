@@ -11,7 +11,7 @@ public class Xpath {
     public static void main(String[] args) throws InterruptedException {
 
 
-        System.setProperty("webdriver.chrome.drive","src/resources/drivers/chromedriver.exe");
+        System.setProperty("webdriver.chrome.drive", "src/resources/drivers/chromedriver.exe");
         WebDriver driver = new ChromeDriver();
         driver.manage().window().maximize();
         driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(15));
@@ -30,9 +30,9 @@ public class Xpath {
 
         //3- Delete butonu’nun gorunur oldugunu test edin
         WebElement deleteButonu = driver.findElement(By.xpath("//button[@onclick='deleteElement()']"));
-        if (deleteButonu.isDisplayed()){ //Bir webelementin gorunur olup olmadigina isDisplayed methodu ile bakariz.
+        if (deleteButonu.isDisplayed()) { //Bir webelementin gorunur olup olmadigina isDisplayed methodu ile bakariz.
             System.out.println("Test PASSED");
-        }else {
+        } else {
             System.out.println("Test FAILED");
         }
 
@@ -42,19 +42,13 @@ public class Xpath {
 
 
         //5- “Add/Remove Elements” yazisinin gorunur oldugunu test edin
-
-
-
-
-
-
-
-
-
-
-
-
-
+        WebElement addRemoveEYazisi = driver.findElement(By.xpath("//h3"));
+        if (addRemoveEYazisi.isDisplayed()) {
+            System.out.println("TEST PASSED");
+        } else System.out.println("TEST FAILED");
 
     }
+
+
 }
+
